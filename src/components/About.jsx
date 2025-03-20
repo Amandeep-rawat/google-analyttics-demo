@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ReactGA from "react-ga4";
-import usePageTracking from "../hooks/usePageTracking";
+// import usePageTracking from "../hooks/usePageTracking";
 
 const About = () => {
 //   usePageTracking(); // Page tracking automatically

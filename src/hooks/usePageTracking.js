@@ -5,7 +5,7 @@ import ReactGA from "react-ga4";
 // Initialize Google Analytics once
 ReactGA.initialize("G-KWD41R4GJM");
 
-const usePageTracking = () => {
+const usePageTracking = () => { // ✅ Custom hooks should start with "use" in lowercase
   const location = useLocation();
 
   useEffect(() => {
