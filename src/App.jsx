@@ -1,19 +1,12 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
-
+import usePageTracking from "./Usetracing";
 // Initialize Google Analytics
 ReactGA.initialize("G-KWD41R4GJM");
 
 // Custom Hook for Page Views
-const usePageTracking = () => {
-  const location = useLocation();
 
-  useEffect(() => {
-    ReactGA.send("pageview");
-    console.log("Page View Tracked: ", location.pathname);
-  }, [location]);
-};
 
 const Home = () => {
   usePageTracking();
@@ -35,6 +28,7 @@ const Home = () => {
     </div>
   );
 };
+
 
 const Contact = () => {
   usePageTracking();
